@@ -53,6 +53,7 @@ export default {
     border-radius: 0 1rem 1rem 0;
     border: none;
     cursor: pointer;
+    background: #eae328;
 
     &:hover {
       opacity: 80%;
