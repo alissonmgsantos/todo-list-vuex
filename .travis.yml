@@ -9,8 +9,6 @@ cache: npm
 before_install:
   - npm i -g npm@latest
 
-install: npm install
-
 script:
   - npm run deploy
 
