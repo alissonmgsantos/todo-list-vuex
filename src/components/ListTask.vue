@@ -2,7 +2,7 @@
   <div class="container-list-task">
     <template v-if="datasource.length > 0">
       <template v-for="(task, key) in datasource">
-        <div :key="key" class="list">
+        <div :key="key" class="item">
           <p :class="{ 'task-done': task.done }">
             {{ task.description }}
           </p>
@@ -43,10 +43,10 @@ export default {
 <style lang="scss" scoped>
 .container-list-task {
   background: #1d1d27;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1rem;
 
-  .list {
+  .item {
     display: flex;
     align-items: center;
     justify-content: space-between;
