@@ -1,16 +1,10 @@
-node_js:
-  - "lts/*"
-
+language: node_js
 node_js:
   - 'node'
 
 cache: npm
 
-before_install:
-  - npm i -g npm@latest
-
-script:
-  - npm run deploy
+script: npm run build
 
 deploy:
   provider: pages
